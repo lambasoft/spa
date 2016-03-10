@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration
+class CreateSpasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,15 +12,15 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('spas', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('name', 20);
+            $table->string('location', 40);
+            $table->string('size');
+            $table->text('description');
             $table->string('phone');
-            $table->string('email')->unique();
-            $table->string('photo');
-            $table->string('password');
-            $table->integer('access')->unsigned();
-            $table->rememberToken();
+            $table->string('fax');
+            $table->string('logo');
             $table->timestamps();
         });
     }
@@ -32,6 +32,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('users');
+        Schema::drop('spas');
     }
 }

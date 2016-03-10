@@ -12,8 +12,21 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.home');
 });
+
+Route::get('/register', function () {
+    return view('auth.register');
+});
+
+
+Route::group(['prefix' => 'spas'], function () {
+	Route::get('test', "SpasController@test");
+});
+
+Route::resource('spas', 'SpasController');
+
+
 
 /*
 |--------------------------------------------------------------------------

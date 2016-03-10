@@ -1,2 +1,95 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+body {
+	font: 14px/24px 'Lato', sans-serif;
+	background: url("../assets/bg.png");
+}
+
+
+/* Heading Styles Starts */
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family: 'Lato', sans-serif;
+	color: #FFFCEC;
+}
+h1 { font-size: 60px; }
+h2 { font-size: 54px; }
+h3 { font-size: 36px; }
+h4 { font-size: 24px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+/* Header */
+
+header{
+	padding-top: 10px;
+	background: #f1f1f1;
+}
+header .well{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+	padding: 0;
+	padding-top: 20px;
+	border: 0;
+	background: transparent;
+}
+header .logo{
+	padding: 0;
+}
+header .logo a{
+	color: #333;
+	font-size: 35px;
+	font-family: 'open_sanscondensed_light';
+}
+header .logo a span{
+	color: #428bca;
+}
+header .logo a:hover{
+	text-decoration: none;
+}
+
+/* Navbar */
+
+@media (min-width: 768px) {
+    .navbar { border-radius: 0 }
+}
+.navbar-toggle { border-radius: 0 }
+.navbar-toggle .icon-bar { border-radius: 0 }
+
+.navbar{
+	background: #384248;
+	margin-bottom: 0;
+	border-color: #384248
+}
+@media (min-width: 768px) {
+	.navbar-nav > li > a {
+		padding-top: 17px;
+		padding-bottom: 17px;
+	}
+}
+.navbar li a{
+	font-family: 'open_sanscondensed_light';
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #fff!important;
+	-ms-transition: all 100ms ease-in-out 0s ;
+	-moz-transition: all 100ms ease-in-out 0s ;
+	-webkit-transition: all 100ms ease-in-out 0s ;
+	-o-transition: all 100ms ease-in-out 0s ;
+	transition: all 100ms ease-in-out 0s ;
+}
+.navbar li a:hover, .navbar li a.active{
+	background-color: #428bca!important;
+}
+.navbar li.nav-dropdown .caret{
+	border-top-color: #fff;
+	border-bottom-color: #fff;
+}
