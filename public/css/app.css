@@ -5749,99 +5749,181 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-body {
-  font: 14px/24px 'Lato', sans-serif;
-  background: url("../assets/bg.png"); }
+/*
+ * Globals
+ */
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff; }
 
-/* Heading Styles Starts */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Lato', sans-serif;
-  color: #FFFCEC; }
-
-h1 {
-  font-size: 60px; }
-
-h2 {
-  font-size: 54px; }
-
-h3 {
-  font-size: 36px; }
-
-h4 {
-  font-size: 24px; }
-
-h5 {
-  font-size: 18px; }
-
-h6 {
-  font-size: 16px; }
-
-/* Header */
-header {
-  padding-top: 10px;
-  background: #f1f1f1; }
-
-header .well {
-  -ms-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
-  padding: 0;
-  padding-top: 20px;
-  border: 0;
-  background: transparent; }
-
-header .logo {
-  padding: 0; }
-
-header .logo a {
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
   color: #333;
-  font-size: 35px;
-  font-family: 'open_sanscondensed_light'; }
+  text-shadow: none;
+  /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff; }
 
-header .logo a span {
-  color: #428bca; }
+/*
+ * Base structure
+ */
+html,
+body {
+  height: 100%;
+  background-image: url("assets/bg.png");
+  background-color: #333; }
 
-header .logo a:hover {
-  text-decoration: none; }
-
-/* Navbar */
-@media (min-width: 768px) {
-  .navbar {
-    border-radius: 0; } }
-
-.navbar-toggle {
-  border-radius: 0; }
-
-.navbar-toggle .icon-bar {
-  border-radius: 0; }
+body {
+  color: #fff;
+  text-align: center;
+  font-family: 'Open Sans', Helvetica Neue, Sans-serif; }
 
 .navbar {
-  background: #384248;
-  margin-bottom: 0;
-  border-color: #384248; }
+  margin-bottom: 0px; }
 
-@media (min-width: 768px) {
-  .navbar-nav > li > a {
-    padding-top: 17px;
-    padding-bottom: 17px; } }
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
 
-.navbar li a {
-  font-family: 'open_sanscondensed_light';
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #fff !important;
-  transition: all 100ms ease-in-out 0s; }
+.colored-green {
+  color: #1DA072; }
 
-.navbar li a:hover, .navbar li a.active {
-  background-color: #428bca !important; }
+.colored-black {
+  color: #313131; }
 
-.navbar li.nav-dropdown .caret {
-  border-top-color: #fff;
-  border-bottom-color: #fff; }
+.colored-red {
+  color: #DA4444; }
+
+.colored-maroon {
+  color: #B77935; }
+
+.colored-yellow {
+  color: #C7D611; }
+
+.colored-gray {
+  color: #797979; }
+
+.colored-blue {
+  color: #3A4FBF; }
+
+.colored-purple {
+  color: #753A98; }
+
+.colored-pink {
+  color: #96034C; }
+
+.border-bottom-hover-green:hover {
+  border-bottom-color: #1DA072; }
+
+.border-bottom-hover-black:hover {
+  border-bottom-color: #313131; }
+
+.border-bottom-hover-red:hover {
+  border-bottom-color: #DA4444; }
+
+.border-bottom-hover-maroon:hover {
+  border-bottom-color: #B77935; }
+
+.border-bottom-hover-yellow:hover {
+  border-bottom-color: #C7D611; }
+
+.border-bottom-hover-gray:hover {
+  border-bottom-color: #797979; }
+
+.border-bottom-hover-blue:hover {
+  border-bottom-color: #3A4FBF; }
+
+.border-bottom-hover-purple:hover {
+  border-bottom-color: #753A98; }
+
+.border-bottom-hover-pink:hover {
+  border-bottom-color: #96034C; }
+
+/*
+  Header
+*/
+header {
+  margin-top: 10px; }
+
+header .logo .navbar-header {
+  margin: auto;
+  float: none; }
+
+/*
+  PAGES
+*/
+.pages {
+  margin-top: 50px; }
+
+.single-page .page-icon {
+  font-size: 3em;
+  margin-bottom: 0px; }
+
+.single-page h3 {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 5px; }
+
+.single-page {
+  padding: 5px 25px 5px 25px;
+  margin: 0 0 30px 0;
+  background: #ffffff;
+  border-top: 1px solid #9C9C9C;
+  border-left: 1px solid #9C9C9C;
+  border-right: 1px solid #9C9C9C;
+  border-bottom: 4px solid #9C9C9C;
+  border-radius: 3px;
+  transition: all ease 0.55s; }
+
+/*
+  WOW
+*/
+.wowBack {
+  background: #222;
+  position: relative;
+  overflow: hidden; }
+
+.wowWrap div {
+  background: #27ae60;
+  display: block;
+  width: 100%;
+  margin: 5% 0;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%; }
+
+.wowWrap {
+  width: 16.66%;
+  float: left;
+  padding: 0 .5%; }
+
+.wowWrap h4 {
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  padding: 1% 0% 1% 0%;
+  margin: 0;
+  color: white;
+  font-size: 1.35vw;
+  background: rgba(22, 22, 22, 0.3); }
+
+.wowWrap div:first-of-type {
+  margin-top: 25%; }
+
+/*I've assigned class wHighlight to all the animate.css classes that add elements onto the page with delay.  */
+.wHighlight {
+  background: #28a !important; }
+
+/*
+  FOOTER
+*/
+footer {
+  margin-top: 50px; }
 
 /*# sourceMappingURL=app.css.map */
