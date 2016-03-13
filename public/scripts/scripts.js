@@ -29,9 +29,14 @@
 		
 		if(options['useAJAX'] == true)
 		{
-			// Dummy AJAX request (Replace this with your AJAX code)
-		  // If you don't want to use AJAX, remove this
-  	  dummy_submit_form($(this));
+
+      // If you don't want to use AJAX, remove this
+      dummy_submit_form($(this));
+
+      url = $form.attr( "action" );
+      var posting = $.post( url, { s: term } );
+
+			
 		
 		  // Cancel the normal submission.
 		  // If you don't want to use AJAX, remove this
@@ -152,5 +157,34 @@
   		}, 2000);
   	}
   }
-	
+
+  //  LOGIN MODAL
+  $('#login-form-link').click(function(e) {
+    $("#login-form").delay(100).fadeIn(100);
+    $("#register-form").fadeOut(100);
+    $('#register-form-link').removeClass('active');
+    $("#recover-form").fadeOut(100);
+    $('#recover-form-link').removeClass('active');
+    $(this).addClass('active');
+    e.preventDefault();
+  });
+  $('#register-form-link').click(function(e) {
+    $("#register-form").delay(100).fadeIn(100);
+    $("#login-form").fadeOut(100);
+    $('#login-form-link').removeClass('active');
+    $("#recover-form").fadeOut(100);
+    $('#recover-form-link').removeClass('active');
+    $(this).addClass('active');
+    e.preventDefault();
+  });
+  $('#recover-form-link').click(function(e) {
+    $("#recover-form").delay(100).fadeIn(100);
+    $("#login-form").fadeOut(100);
+    $('#login-form-link').removeClass('active');
+    $("#register-form").fadeOut(100);
+    $('#register-form-link').removeClass('active');
+    $(this).addClass('active');
+    e.preventDefault();
+  });
+  
 })(jQuery);

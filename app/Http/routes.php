@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
 
 Route::get('/register', function () {
     return view('auth.register');
@@ -25,8 +22,6 @@ Route::group(['prefix' => 'spas'], function () {
 });
 
 Route::resource('spas', 'SpasController');
-
-
 
 /*
 |--------------------------------------------------------------------------
@@ -40,5 +35,13 @@ Route::resource('spas', 'SpasController');
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+	Route::get('/', function () {
+	    return view('pages.home');
+	});
+});
+
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    Route::get('/home', 'HomeController@index');
 });

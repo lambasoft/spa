@@ -15,7 +15,7 @@ class SpasController extends Controller
      */
     public function index()
     {
-        return "Browsing Spas";
+        return view("spas.home");
     }
 
     /**
