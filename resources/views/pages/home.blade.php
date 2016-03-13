@@ -194,7 +194,7 @@
 
         <footer class="footer">
           <div class="container">
-            <p class="text-muted">Made with love, Ayman.</p>
+            <p class="text-muted">All Rights Reserved</p>
           </div>
         </footer>
 
