@@ -63,7 +63,7 @@
         <div class="row">
           <div class="button">
             <!-- <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary standard-button">GET STARTED</a> -->
-            <a href="/home" class="btn btn-primary standard-button">Login</a>
+            <a href="/spas" class="btn btn-primary standard-button">Get Started</a>
           </div>
         </div>
       </div>

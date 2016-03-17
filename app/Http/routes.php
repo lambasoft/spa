@@ -17,11 +17,8 @@ Route::get('/register', function () {
 });
 
 
-Route::group(['prefix' => 'spas'], function () {
-	Route::get('test', "SpasController@test");
-});
 
-Route::resource('spas', 'SpasController');
+
 
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +35,8 @@ Route::group(['middleware' => ['web']], function () {
 	Route::get('/', function () {
 	    return view('pages.home');
 	});
+
+	Route::resource('spas', 'SpasController');
 });
 
 Route::group(['middleware' => 'web'], function () {
