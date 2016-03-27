@@ -35,174 +35,131 @@
   <body id="app-layout">
 
     <header class="home-page">
-      <div class="container">        
-        <!-- LOGO ON HEADER -->
-        <div class="center-block">
-          <img src="assets/logo.png" alt="">
-        </div>
-        <!-- /END LOGO ON HEADER -->
-
+      <div class="container">
         <div class="row">
-          <div class="col-md-12 zoomIn animated">
-            <!-- HEADING AND BUTTONS -->
-            <div class="intro-section">
-
-              <!-- WELCOM MESSAGE -->
-              <h1 class="intro white-text">Simple, Reliable and Awesome.</h1>
-              <h5 class="white-text">Find the best Spas wherever you are</h5>
-
+          <div class="col-md-10">     
+            <div class="row">  
+              <!-- LOGO ON HEADER -->
+              <div class="pull-right">
+                <img src="assets/logo.png" alt="">
+              </div>
             </div>
-            <!-- /END HEADNING AND BUTTONS -->
+            <div class="account">
+              <div class="row">
+                <div class="button pull-right">
+                  <!-- <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary standard-button">GET STARTED</a> -->
+                  <a href="/spas" class="btn btn-primary standard-button">Get Started</a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div> 
+        </div>
       </div>
     </header>
 
+
+
+
     <div class="container">
-      <div class="account">
-        <div class="row">
-          <div class="button">
-            <!-- <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary standard-button">GET STARTED</a> -->
-            <a href="/spas" class="btn btn-primary standard-button">Get Started</a>
+      <div class="row">
+        <div class="pages">
+          <div class="col-md-2 fadeInLeft animated">
+            <div class="single-page banner">
+              <h3 style="color:black">Banner</h3>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-3 col-xs-6 fadeInLeft animated">
+                <div class="single-page border-bottom-hover-green">
+                  <a href="#">
+                    <h3 class="colored-green">SPA</h3>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-xs-6 fadeInLeft animated ">
+                <div class="single-page border-bottom-hover-red">
+                  <a href="#">
+                    <h3 class="colored-red">WELLNESS</h3>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-xs-6 fadeInLeft animated">
+                <div class="single-page border-bottom-hover-pink">
+                  <a href="#">
+                    <h3 class="colored-pink">GIFTS</h3>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-xs-6 fadeInLeft animated">
+                <div class="single-page border-bottom-hover-maroon">
+                  <a href="#">
+                    <h3 class="colored-maroon">JOBS</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3 col-xs-6 fadeInRight animated">
+                <div class="single-page border-bottom-hover-blue">
+                  <a href="#">
+                    <h3 class="colored-blue">SUPPLIES</h3>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-xs-6 fadeInRight animated">
+                <div class="single-page border-bottom-hover-purple">
+                  <a href="#">
+                    <h3 class="colored-purple">MANUALS</h3>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-xs-6 fadeInRight animated">
+                <div class="single-page border-bottom-hover-yellow">
+                  <a href="#">
+                    <h3 class="colored-yellow">RATE SPA</h3>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-xs-6 fadeInRight animated">
+                <div class="single-page border-bottom-hover-gray">
+                  <a href="#">
+                    <h3 class="colored-gray">NEWS</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-2 fadeInLeft animated">
+            <div class="single-page banner">
+              <h3 style="color:black">Banner</h3>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">All Rights Reserved</p>
+      </div>
+    </footer>
 
     <div class="container">
-      <div class="pages">
-        <div class="row">
-          <div class="col-md-3 col-xs-6 fadeInLeft animated">
-            <div class="single-page border-bottom-hover-green">
-              <a href="#">
-                <div class="page-icon  colored-green">
-                  <i class="fa fa-leaf"></i>
-                </div>
-                <h3 class="colored-green">SPA</h3>
-                <p class="colored-black">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis molestiae, ex eos iusto minus hic facilis deserunt, il.
-                </p>
-              </a>
-            </div>
-          </div>
-          
-          <div class="col-md-3 col-xs-6 fadeInLeft animated ">
-            <div class="single-page border-bottom-hover-red">
-              <a href="#">
-                <div class="page-icon  colored-red">
-                  <i class="fa fa-heart"></i>
-                </div>
-                <h3 class="colored-red">WELLNESS</h3>
-                <p class="colored-black">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis molestiae, ex eos iusto minus hic facilis deserunt, il.
-                </p>
-              </a>
-            </div>
-          </div>
-          
-          <div class="col-md-3 col-xs-6 fadeInLeft animated">
-            <div class="single-page border-bottom-hover-pink">
-              <a href="#">
-                <div class="page-icon colored-pink">
-                  <i class="fa fa-gift"></i>
-                </div>
-                <h3 class="colored-pink">GIFTS</h3>
-                <p class="colored-black">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis molestiae, ex eos iusto minus hic facilis deserunt, il.
-                </p>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-xs-6 fadeInLeft animated">
-            <div class="single-page border-bottom-hover-maroon">
-              <a href="#">
-                <div class="page-icon  colored-maroon">
-                  <i class="fa fa-briefcase"></i>
-                </div>
-                <h3 class="colored-maroon">JOBS</h3>
-                <p class="colored-black">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis molestiae, ex eos iusto minus hic facilis deserunt, il.
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-3 col-xs-6 fadeInRight animated">
-            <div class="single-page border-bottom-hover-blue">
-              <a href="#">
-                <div class="page-icon  colored-blue">
-                  <i class="fa fa-truck"></i>
-                </div>
-                <h3 class="colored-blue">SUPPLIES</h3>
-                <p class="colored-black">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis molestiae, ex eos iusto minus hic facilis deserunt, il.
-                </p>
-              </a>
-            </div>
-          </div>
-          
-          <div class="col-md-3 col-xs-6 fadeInRight animated">
-            <div class="single-page border-bottom-hover-purple">
-              <a href="#">
-                <div class="page-icon  colored-purple">
-                  <i class="fa fa-book"></i>
-                </div>
-                <h3 class="colored-purple">MANUALS</h3>
-                <p class="colored-black">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis molestiae, ex eos iusto minus hic facilis deserunt, il.
-                </p>
-              </a>
-            </div>
-          </div>
-          
-          <div class="col-md-3 col-xs-6 fadeInRight animated">
-            <div class="single-page border-bottom-hover-yellow">
-              <a href="#">
-                <div class="page-icon  colored-yellow">
-                  <i class="fa fa-star-half-o"></i>
-                </div>
-                <h3 class="colored-yellow">RATE SPA</h3>
-                <p class="colored-black">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis molestiae, ex eos iusto minus hic facilis deserunt, il.
-                </p>
-              </a>
-            </div>
-          </div>
-          
-          <div class="col-md-3 col-xs-6 fadeInRight animated">
-            <div class="single-page border-bottom-hover-gray">
-              <a href="#">
-                <div class="page-icon  colored-gray">
-                  <i class="fa fa-newspaper-o"></i>
-                </div>
-                <h3 class="colored-gray">NEWS</h3>
-                <p class="colored-black">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis molestiae, ex eos iusto minus hic facilis deserunt, il.
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <footer class="footer">
-        <div class="container">
-          <p class="text-muted">All Rights Reserved</p>
-        </div>
-      </footer>
-
-      <div class="container">
 
 
-      </div>
+    </div>
 
 
-  @include('modals.signin')
+    @include('modals.signin')
 
   <!-- Bootstrap core JavaScript
   ================================================== -->

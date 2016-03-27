@@ -58,6 +58,7 @@ class SpasController extends Controller
     public function show($id)
     {
         //
+        return view('spas.home');
     }
 
     /**
