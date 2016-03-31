@@ -8,6 +8,12 @@ header{
 }
 
 
+.pages-container{	
+  	background: url('/assets/pages-bg.jpg');
+    background-size: cover;
+    margin-top: 30px;
+    border-radius: 10px;
+}
 
 /*
   PAGES
@@ -40,10 +46,11 @@ header{
   	border-left: 1px solid #9C9C9C;
   	border-right: 1px solid #9C9C9C;
   	border-bottom: 4px solid #9C9C9C;
-  	border-radius: 3px;
+  	border-radius: 30px;
   	-webkit-transition: all ease 0.55s;
   	transition: all ease 0.55s;
   	line-height: 150px;
+  	text-align: center;
   }
 
 

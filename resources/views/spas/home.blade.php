@@ -2,11 +2,6 @@
 
 @section('content')
 
-<?php
-use App\Flight;
-use App\Http\Controllers\Controller;
-?>
-
 <div class="container">
 	<div class="spas">
 		<div class="row">

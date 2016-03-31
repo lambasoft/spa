@@ -54,7 +54,7 @@
 
 
 
-    <div class="container">
+    <div class="container pages-container">
       <div class="row">
         <div class="pages">
           <div class="col-md-2 fadeInLeft animated">
