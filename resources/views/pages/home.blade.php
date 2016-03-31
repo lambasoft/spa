@@ -34,22 +34,16 @@
 
   <body id="app-layout">
 
-    <header class="home-page">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10">     
-            <div class="row">  
-              <!-- LOGO ON HEADER -->
-              <div class="pull-right">
-                <img src="assets/logo.png" alt="">
-              </div>
-            </div>
+    <header class="container home-page">
+      <div class="row">
+        <div class="col-md-10">  
+          <div class="pull-right">  
+            <!-- LOGO ON HEADER -->
+            <img class="pull-right" src="assets/logo.png" alt="">
             <div class="account">
-              <div class="row">
-                <div class="button pull-right">
-                  <!-- <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary standard-button">GET STARTED</a> -->
-                  <a href="/spas" class="btn btn-primary standard-button">Get Started</a>
-                </div>
+              <div class="button pull-right">
+                <!-- <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary standard-button">GET STARTED</a> -->
+                <a href="spas" class="btn btn-primary standard-button">Get Started</a>  
               </div>
             </div>
           </div>

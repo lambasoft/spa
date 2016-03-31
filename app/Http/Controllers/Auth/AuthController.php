@@ -5,8 +5,14 @@ namespace App\Http\Controllers\Auth;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
+
+use Illuminate\Http\Request;
+
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+
+use Jrean\UserVerification\Traits\VerifiesUsers;
+use Jrean\UserVerification\Facades\UserVerification;
 
 class AuthController extends Controller
 {
@@ -21,7 +27,7 @@ class AuthController extends Controller
     |
     */
 
-    use AuthenticatesAndRegistersUsers, ThrottlesLogins;
+    use AuthenticatesAndRegistersUsers, ThrottlesLogins, VerifiesUsers;
 
     /**
      * Where to redirect users after login / registration.
@@ -69,4 +75,5 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+
 }

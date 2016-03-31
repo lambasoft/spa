@@ -16,8 +16,8 @@ Route::get('/register', function () {
     return view('auth.register');
 });
 
-
-
+Route::get('verification/error', 'Auth\AuthController@getVerificationError');
+Route::get('verification/{token}', 'Auth\AuthController@getVerification');
 
 
 /*
@@ -32,15 +32,13 @@ Route::get('/register', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
+    Route::auth();
+
 	Route::get('/', function () {
 	    return view('pages.home');
 	});
 
 	Route::resource('spas', 'SpasController');
-});
-
-Route::group(['middleware' => 'web'], function () {
-    Route::auth();
 
     Route::get('/home', 'HomeController@index');
 });
