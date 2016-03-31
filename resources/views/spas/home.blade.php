@@ -11,7 +11,7 @@ use App\Http\Controllers\Controller;
 	<div class="spas">
 		<div class="row">
 
-			<div class="col-md-4 col-xs-6 fadeInLeft animated">
+<!-- 			<div class="col-md-4 col-xs-6 fadeInLeft animated">
 				<div class="single-spa border-bottom-hover-green">
 					<a href="#">
 						<div class="spa-image">
@@ -58,7 +58,7 @@ use App\Http\Controllers\Controller;
 				</div>
 			</div>
 
-			
+			 -->
 
 		</div>
 	</div>
