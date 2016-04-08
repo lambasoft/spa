@@ -5774,7 +5774,8 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #000; }
+  background: url("../assets/background.jpeg");
+  background-size: cover; }
 
 body {
   color: #fff;
@@ -5815,6 +5816,9 @@ body {
 
 .colored-pink {
   color: #96034C; }
+
+.colored-white {
+  color: #fff; }
 
 .border-bottom-hover-green:hover {
   border-bottom-color: #1DA072 !important; }

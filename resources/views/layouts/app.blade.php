@@ -17,7 +17,8 @@
 
     <style>
         body {
-            font-family: 'Lato';
+            background: url("../assets/background.jpeg");
+            background-size: cover;
         }
 
         .fa-btn {

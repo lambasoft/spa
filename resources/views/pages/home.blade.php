@@ -34,126 +34,116 @@
 
   <body id="app-layout">
 
-    <header class="container home-page">
-      <div class="row">
-        <div class="col-md-10">  
-          <div class="pull-right">  
-            <!-- LOGO ON HEADER -->
-            <img class="pull-right" src="assets/logo.png" alt="">
-            <div class="account">
-              <div class="button pull-right">
-                <!-- <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary standard-button">GET STARTED</a> -->
-                <a href="spas" class="btn btn-primary standard-button">Get Started</a>  
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-
-
-
-    <div class="container pages-container">
-      <div class="row">
-        <div class="pages">
-          <div class="col-md-2 fadeInLeft animated">
-            <div class="single-page banner">
-              <h3 style="color:black">Banner</h3>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="row">
-              <div class="col-md-3 col-xs-6 fadeInLeft animated">
-                <div class="single-page border-bottom-hover-green">
-                  <a href="#">
-                    <h3 class="colored-green">SPA</h3>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-md-3 col-xs-6 fadeInLeft animated ">
-                <div class="single-page border-bottom-hover-red">
-                  <a href="#">
-                    <h3 class="colored-red">WELLNESS</h3>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-md-3 col-xs-6 fadeInLeft animated">
-                <div class="single-page border-bottom-hover-pink">
-                  <a href="#">
-                    <h3 class="colored-pink">GIFTS</h3>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-md-3 col-xs-6 fadeInLeft animated">
-                <div class="single-page border-bottom-hover-maroon">
-                  <a href="#">
-                    <h3 class="colored-maroon">JOBS</h3>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-3 col-xs-6 fadeInRight animated">
-                <div class="single-page border-bottom-hover-blue">
-                  <a href="#">
-                    <h3 class="colored-blue">SUPPLIES</h3>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-md-3 col-xs-6 fadeInRight animated">
-                <div class="single-page border-bottom-hover-purple">
-                  <a href="#">
-                    <h3 class="colored-purple">MANUALS</h3>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-md-3 col-xs-6 fadeInRight animated">
-                <div class="single-page border-bottom-hover-yellow">
-                  <a href="#">
-                    <h3 class="colored-yellow">RATE SPA</h3>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-md-3 col-xs-6 fadeInRight animated">
-                <div class="single-page border-bottom-hover-gray">
-                  <a href="#">
-                    <h3 class="colored-gray">NEWS</h3>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-2 fadeInLeft animated">
-            <div class="single-page banner">
-              <h3 style="color:black">Banner</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer class="footer">
+  <!-- Header -->
+  <header>
       <div class="container">
-        <p class="text-muted">All Rights Reserved</p>
+          <div class="row">
+              <div class="col-md-4 col-md-offset-4">
+                  <img class="img-responsive" src="assets/logo.png" alt="">
+                  <div class="text-center">
+                      <a href="spas" class="btn btn-lg btn-primary standard-button">Get Started</a>
+                  </div>
+              </div>
+          </div>
       </div>
-    </footer>
-
-    <div class="container">
+  </header>
 
 
+
+
+    <div class="container-fluid pages-container">
+      <div class="row pages">
+       <div class="col-md-2 fadeInLeft animated">
+        <div class="single-page banner">
+          <h3 style="color:black">Banner</h3>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-3 col-xs-6 fadeInLeft animated">
+            <div class="single-page border-bottom-hover-green">
+              <a href="#">
+                <h3 class="colored-white">SPA</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-6 fadeInLeft animated ">
+            <div class="single-page border-bottom-hover-red">
+              <a href="#">
+                <h3 class="colored-white">GYM</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-6 fadeInLeft animated">
+            <div class="single-page border-bottom-hover-pink">
+              <a href="#">
+                <h3 class="colored-white">GIFTS</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-6 fadeInLeft animated">
+            <div class="single-page border-bottom-hover-maroon">
+              <a href="#">
+                <h3 class="colored-white">JOBS</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-xs-6 fadeInRight animated">
+            <div class="single-page border-bottom-hover-blue">
+              <a href="#">
+                <h3 class="colored-white">SUPPLIES</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-6 fadeInRight animated">
+            <div class="single-page border-bottom-hover-purple">
+              <a href="#">
+                <h3 class="colored-white">MANUALS</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-6 fadeInRight animated">
+            <div class="single-page border-bottom-hover-yellow">
+              <a href="#">
+                <h3 class="colored-white">RATE SPA</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-6 fadeInRight animated">
+            <div class="single-page border-bottom-hover-gray">
+              <a href="#">
+                <h3 class="colored-white">NEWS</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-2 fadeInRight animated">
+        <div class="single-page banner">
+          <h3 style="color:black">Banner</h3>
+        </div>
+      </div>
     </div>
+  </div>
 
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">All Rights Reserved</p>
+    </div>
+  </footer>
+</div>
 
-    @include('modals.signin')
+@include('modals.signin')
 
   <!-- Bootstrap core JavaScript
   ================================================== -->
